@@ -6,9 +6,19 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a letter between A - Z or a number from 0-9 and hit Enter");
         String text = scan.nextLine();
-        String code = converter.getMorse(text.toUpperCase());
+        String text2 = converter.getMorse(text.toUpperCase());
 
         System.out.println("You have entered the letter or number " + text + " " +
-                "and the morse code will appear as " + code);
+                "and the morse code will appear as " + text2);
+
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        System.out.println("Enter a Morse code character. Either a letter or number.");
+        String text3 = scan.nextLine();
+        String text4 = converter.getEng(text3);
+
+        System.out.println("You have entered the morse code " + text3 + " and the english " +
+                "character will appear as " + text4);
+
     }
 }
