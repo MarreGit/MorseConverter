@@ -14,7 +14,8 @@ public class Main {
         }
         System.out.println("----------------------------------------------------------------");
 
-        System.out.println("Enter a Morse code character. Either a letter or number.");
+        System.out.println("Enter Morse code characters to form either a letter or a number and then press Enter " +
+                "using * (for short) and - (for long)");
         String text3 = scan.nextLine();
         String text4 = converter.getEng(text3);
         System.out.println("You have entered the morse code " + text3 + " and the english " +
@@ -23,6 +24,7 @@ public class Main {
             System.out.println("This sign is is not allowed. It cant be null. Please enter a correct morse code sign " +
                     " with * and/or -");
         }
+        scan.close();
 
 
     }

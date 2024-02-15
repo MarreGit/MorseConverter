@@ -1,8 +1,8 @@
 import java.util.HashMap;
 
 public class Converter {
-    private HashMap<String, String> engToMorse;
-    private HashMap<String, String> morseToEng;
+    private final HashMap<String, String> engToMorse;
+    private final HashMap<String, String> morseToEng;
     public Converter(){
         engToMorse = new HashMap<>();
         engToMorse.put("A","*-");
